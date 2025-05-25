@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <title>Нейросеть в Excel</title>
+    <style>
+        .textcenter{text-align: center;font-family: verdana;}
+        .center{display: flex;}
+        div{align-items: center;justify-content: center;}
+        p{font-family: verdana;}
+        h1{font-family: verdana;text-align: center;}
+        .irow input{padding: 1px;
+            border: 1px solid black;
+            font-family: verdana;
+            font-size: 15px;
+            float:left;
+            height: 30px;
+            width: 40px;
+            
+        
+            
+            }
+        table{
+            font-family:verdana;
+        
+        }
+        td{
+            background-color: #FFFFFF;
+            font-family:verdana;
+        }
+        th{
+            background-color: #FFFFFF;
+            font-family:verdana;
+        }
+        button{
+            background-color:#000000;
+            border:none;
+            color:#FFFFFF;
+            border-radius: 3px;
+                
+        }
+        
+    </style>
+    </head>
+    <body>
+        <h1>Нейросеть в Экселе</h1>
+        <p class="textcenter">Один пользователь Ютубом <a href="https://youtube.com/@oivanov520?si=d6d_165dCy6t2WEG">exolonpro</a> создал самую простую нейросеть в Экселе которая занимается тем что распознаёт фигуры подробнее будет на его канале</p>
+        <div class="center">
+        <div>
+        <a href="https://youtu.be/IJQ98IGaGJU?si=yvvMFbbFM1OLN8u0">
+        <img src="Screenshot%202025-05-25%20103112.png" alt="webai">
+        </a>
+        </div>
+        </div>    
+        <br>
+        <br>
+        
+        <button onclick="submit()">Начать распознавание</button>
+            
+        <br>
+        <br>
+        <p>Образец нейросети на JavaScript созданным самим автором этого сайта</p>
+        <div class="irow">    
+        <input id="i1" value="0.1">
+        <input id="i2" value="0.1">
+        <input id="i3" value="0.1">
+        </div>
+        <br>
+        <br>
+    
+        <div class="irow">    
+        <input id="i4" value="0.1">
+        <input id="i5" value="0.1">
+        <input id="i6" value="0.1">
+        </div>
+        
+        <br>
+        <br>
+        <div class="irow">   
+        <input id="i7" value="0.1">
+        <input id="i8" value="0.1">
+        <input id="i9" value="0.1">
+        </div>    
+        <br>
+        <br>
+        
+        <table border="1" bgcolor="black" align="top">
+        <tr><td>фигуры</td><td>ОТВЕТ схожесть</td></tr>
+        <tr><td> - </td><td id="out1">0</td></tr>
+        <tr><td> | </td><td id="out2">0</td></tr>
+        <tr><td> \ </td><td id="out3">0</td></tr>
+        <tr><td> / </td><td id="out4">0</td></tr>
+        <tr><td> + </td><td id="out5">0</td></tr>
+        <tr><td> □ </td><td id="out6">0</td></tr>    
+        
+        </table>
+        
+         <script src="script.js"></script>   
+    </body>
+</html>
